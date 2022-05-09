@@ -11,20 +11,13 @@
         #map {width: 100%; height: 100%;}
     </style>
 
-      <!-- Javascript and CSS Libraries
-      <script src="http://cdn.leafletjs.com/leaflet/v1.7.0/leaflet.js"></script>
-      <script src='https://api.mapbox.com/mapbox.js/v3.3.1/mapbox.js'></script>
-      <link href='https://api.mapbox.com/mapbox.js/v3.3.1/mapbox.css' rel='stylesheet' />
-      <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.0/dist/leaflet.css"/>
-          -->
-      <!-- Javascript and CSS libraries updated -->
+      <!-- Javascript and CSS Libraries -->
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
       <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css" integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ==" crossorigin="" />
       <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js" integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ==" crossorigin=""></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-ajax/2.1.0/leaflet.ajax.min.js"></script>
       <script src='https://api.mapbox.com/mapbox.js/v3.3.1/mapbox.js'></script>
       <link href='https://api.mapbox.com/mapbox.js/v3.3.1/mapbox.css' rel='stylesheet' />
-
 
   </head>
 
@@ -36,7 +29,7 @@
       L.mapbox.accessToken = 'pk.eyJ1Ijoid2F0ZXJsZXZlbG1lZGl1bSIsImEiOiJjbDB2YmhrMmMwYTlkM2ZwNXkwZzN2MDZvIn0.RmAtc_LgDzSMJEillx5PwQ';
       var map = L.mapbox.map('map')
           .setView([36.213852, -81.672401], 14) //latlong coordinates and Zoom level set over Boone, NC
-          .addLayer(L.mapbox.styleLayer('mapbox://styles/waterlevelmedium/cl0vbxhj2000w15mlv0smp75b'));
+          .addLayer(L.mapbox.styleLayer('mapbox://styles/waterlevelmedium/cl0vbxhj2000w15mlv0smp75b'), {attribution: 'Mapbox Template_pyle2022'});
       //  L.mapbox.accessToken = 'pk.eyJ1Ijoid2F0ZXJsZXZlbG1lZGl1bSIsImEiOiJjbDB2YmhrMmMwYTlkM2ZwNXkwZzN2MDZvIn0.RmAtc_LgDzSMJEillx5PwQ';
     //    var map = L.mapbox.map('map')
           //  .setView([36.213852, -81.672401], 14) //latlong coordinates and Zoom level set over Boone, NC
